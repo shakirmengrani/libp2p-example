@@ -1,0 +1,26 @@
+{
+  "name": "example_libp2p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.2.12",
+    "@grpc/proto-loader": "^0.6.0",
+    "@mapbox/node-pre-gyp": "^1.0.3",
+    "install": "^0.13.0",
+    "ipfs": "^0.54.4",
+    "it-pipe": "^1.1.0",
+    "libp2p": "^0.30.12",
+    "libp2p-mdns": "^0.16.0",
+    "libp2p-mplex": "^0.10.2",
+    "libp2p-noise": "^2.0.5",
+    "libp2p-tcp": "^0.15.3",
+    "libp2p-websockets": "^0.15.5",
+    "peer-id": "^0.14.6"
+  }
+}
