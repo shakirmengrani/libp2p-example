@@ -50,7 +50,7 @@ const getPeerId = async () => {
     })
 
     node.connectionManager.on("peer:connect", (connection) => console.log('connected to: ', connection.remotePeer.toB58String()))
-    node.on("peer:discovery", (peer) => console.log('Discovered:', peer.id.toB58String()))
+    node.on("peer:discovery", (peer) => console.log('Discovered:', peer))
     await node.start()
     console.log('listening on:', node.isStarted())
     node.multiaddrs.forEach((ma) => console.log(`${ma.toString()}/p2p/${node.peerId.toB58String()}`))
