@@ -92,7 +92,9 @@ const sendMsg = async (peer, msg) => {
         await pipe(stream, async (src) => {
             try {
                 for await (let msg of src) {
-                    console.log(packMsg(msg["_bufs"][0], "unpack"))
+                    for(let buf of msg["_bufs"]){
+                        console.log(packMsg(buf, "unpack"))
+                    }
                 }
             } catch (err) {
                 console.log("receiver error",err)
